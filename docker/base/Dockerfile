@@ -6,7 +6,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 # ====================
 # INSTALL COMMON TOOLS
 # ====================
-RUN apt-get update && apt-get install -y net-tools vim cmake
+RUN rm -f /etc/apt/sources.list.d/* && \
+    sed -i '/kitware/d' /etc/apt/sources.list && \
+    apt-get update && apt-get install -y net-tools vim cmake
 
 
 # ==================
