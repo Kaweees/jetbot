@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source configure.sh
 
 JUPYTER_WORKSPACE=${1:-$HOME}  # default to $HOME

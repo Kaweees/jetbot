@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo docker run -it -d \
     --restart always \
     --runtime nvidia \

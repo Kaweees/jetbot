@@ -1,3 +1,5 @@
+#!/bin/bash
+
 WORKSPACE=$1
 JETBOT_CAMERA=${2:-opencv_gst_camera}
 
